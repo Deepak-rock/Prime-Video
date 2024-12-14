@@ -4,7 +4,7 @@ import './index.css'
 
 const PrimeVideo = props => {
   const {moviesList} = props
-  const categoryComdey = moviesList.filter(
+  const categoryComedy = moviesList.filter(
     eachItem => eachItem.categoryId === 'COMEDY',
   )
   const categoryAction = moviesList.filter(
@@ -20,8 +20,8 @@ const PrimeVideo = props => {
       <div className="movies-container">
         <h1 className="movie-category">Action Movies</h1>
         <MoviesSlider moviesList={categoryAction} />
-        <h1 className="movie-category">Comdey Movies</h1>
-        <MoviesSlider moviesList={categoryComdey} />
+        <h1 className="movie-category">Comedy Movies</h1>
+        <MoviesSlider moviesList={categoryComedy} />
       </div>
     </div>
   )
